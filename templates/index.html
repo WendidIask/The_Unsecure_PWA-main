@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Login</h1>
+<form action="/" method="post" class="box">
+    <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" />
+    <div class="input__wrapper">
+        <input type="text" name="username" id="username" placeholder="Username" class="input__field" required/>
+    </div>
+    <div class="input__wrapper">
+        <input type="password" name="password" id="password" placeholder="Password" class="input__field" required/>
+    </div>
+    <div class="input__wrapper">
+        <input type="submit" class="btn" value="Log In" />
+    </div>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</form>
+{% endblock %}

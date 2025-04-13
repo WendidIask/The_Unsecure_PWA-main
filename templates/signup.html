@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Signup Form</h1>
+<form action="/signup.html" method="POST" class="box">
+    <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" />
+    <div class="input__wrapper">
+        <input required minlength=2 maxlength=20 title="Username must be between  b " type="text" name="username" placeholder="Username" class="input__field">
+    </div>            
+    <div class="input__wrapper">
+        <input required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{10,}$" title="Password must contain an uppercase letter, lowercase letter, number and symbol." type="password" name="password" placeholder="Password" class="input__field">
+    </div>
+    <div class="input__wrapper">
+        <input required minlength=10 pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" placeholder="DD/MM/YYYY" title="Date of birth must be in the format DD/MM/YYYY." type="dateOfBirth" name="dob" class="input__field">
+    </div>
+    <div class="input__wrapper">
+        <button type="submit" class="btn">Submit</button>
+    </div>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</form>
+{% endblock %}

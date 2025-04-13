@@ -1,0 +1,15 @@
+{				
+	"files.autoSave": "onFocusChange",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[python]": {
+    		"editor.defaultFormatter": "ms-python.black-formatter"
+	},
+	"editor.fontSize": 14,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"window.restoreWindows": "preserve",
+	"workbench.editorAssociations": {
+        	"*.md": "vscode.markdown.preview.editor"
+    	}
+}

@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "McCarter.start-git-bash",
+    "yy0931.vscode-sqlite3-editor",
+    "medo64.render-crlf",
+    "ecmel.vscode-html-css",
+    "ms-python.python",
+    "esbenp.prettier-vscode",
+    "oderwat.indent-rainbow",
+    "ritwickdey.LiveServer",
+    "tomoki1207.pdf",
+    "GitHub.codespaces",
+    "ms-python.debugpy",
+    "ms-python.vscode-pylance",
+    "yahyabatulu.vscode-markdown-alert",
+    "bierner.markdown-preview-github-styles",
+    "mechatroner.rainbow-csv",
+    "ms-python.pylint",
+    "ms-python.vscode-python-envs"
+  ]
+}
